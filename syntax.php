@@ -1,6 +1,6 @@
 <?php
 /**
- * Embed an image gallery
+ * Seek page from a give namespace and create a list of these pages based on a tag in the destination pages
  *
  * @license    GPL 2 (http://www.gnu.org/licenses/gpl.html)
  * @author     Glenn Y. Rolland <glenux@glenux.net>
