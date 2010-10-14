@@ -69,10 +69,12 @@ class syntax_plugin_eventlister extends DokuWiki_Syntax_Plugin {
 	 * Create output
 	 */
 	function render($mode, &$R, $data) {
-		if($mode != 'xhtml') return false;
+        if ($mode != 'xhtml') {
+            $R->doc .= "DA FUCKING EVENTLISTER";            
+            //$R->doc .= $this->_gallery($data);
+        }
 
-		$R->info['cache'] = $data['cache'];
-		$R->doc .= $this->_gallery($data);
+		//$R->info['cache'] = $data['cache'];
 		return true;
 	}
 
