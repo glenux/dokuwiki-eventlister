@@ -53,15 +53,16 @@ class syntax_plugin_eventlister extends DokuWiki_Syntax_Plugin {
 	 * Connect pattern to lexer
 	 */
 	function connectTo($mode) {
-		$this->Lexer->addSpecialPattern('\{\{gallery>[^}]*\}\}',$mode,'plugin_gallery');
+		$this->Lexer->addSpecialPattern('\{\{eventlister>[^}]*\}\}',$mode,'plugin_eventlister');
 	}
 
-	/**
-	 * Handle the match
-	 */
-	function handle($match, $state, $pos, &$handler){
-
-		return $data;
+    /**
+     * Handle the match
+     */
+    function handle($match, $state, $pos, &$handler){
+        $match = preg_replace("%{{eventlister>( (.*))?}}%", "\\2", $match);
+        //echo "\n\t<!-- syntax_plugin_pageindex.handle() found >> $match << -->\n";
+        return $match;
 	}
 
 	/**

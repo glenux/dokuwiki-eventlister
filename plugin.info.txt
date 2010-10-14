@@ -1,4 +1,4 @@
-base   dokuwiki-eventlister
+base   eventlister
 author Glenn Y. Rolland
 email  glenux@glenux.net
 date   2010-10-14
