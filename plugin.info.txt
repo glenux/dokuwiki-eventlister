@@ -1,0 +1,7 @@
+base   dokuwiki-eventlister
+author Glenn Y. Rolland
+email  glenux@glenux.net
+date   2010-10-14
+name   DokuWiki EventLister
+desc   A listing plugin for dokuwiki. It lists either pages for upcoming, either for past events.
+url    http://github.com/glenux/dokuwiki-eventlister
